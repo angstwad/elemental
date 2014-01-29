@@ -1,0 +1,51 @@
+<!--
+# This file is part of Elemental.
+#
+# Copyright 2014 Paul Durivage <pauldurivage+git@gmail.com>
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+-->
+{% extends "header.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block container %}
+    {{ super() }}
+    <div class="row">
+        <div class="col-sm-offset-2 col-sm-10">
+            <h1>Login</h1>
+        </div>
+        <br><br>
+    </div>
+    <div class="row">
+        <form action="" method="post" class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" name="password" id="inputPassword" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
