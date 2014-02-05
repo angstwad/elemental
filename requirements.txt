@@ -2,5 +2,6 @@ flask
 flask-admin
 flask-bcrypt
 flask-debugtoolbar
+flask-mongoengine
 flask-login
 flask-wtf
