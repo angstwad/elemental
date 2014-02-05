@@ -53,17 +53,13 @@ def login():
 
 @app.route('/logout')
 def logout():
-    logout_result = logout_user()
-    raise
+    logout_user()
     return redirect(url_for('index'))
 
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
     form = SignupForm(request.form)
-    print form.validate()
-    print form.errors
-    print form.is_submitted()
     if form.validate_on_submit():
         app.logger.debug('validate')
         email = request.form.get('email')

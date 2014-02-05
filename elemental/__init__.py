@@ -41,5 +41,5 @@ login_manager = LoginManager(app)
 # Import the MVC elements
 import elemental.view
 import elemental.view.admin
-import elemental.control.login
+import elemental.model.login
 import elemental.control.filters
