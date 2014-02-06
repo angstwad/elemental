@@ -17,6 +17,8 @@ Elemental was written to provide my most basic needs in public-facing Flask apps
 
 ## Use
 
+**Be sure to edit the elemental/config/config.py file to settings that suit your environment.**  Primarily, be sure to change the `MONGO_SETTINGS['host']` setting in config.py.
+
 The Flask development server can be invoked from a Python environment that has installed the requirements in `requirements.txt`.
 
 ```
