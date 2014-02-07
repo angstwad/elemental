@@ -21,7 +21,6 @@ from flask.ext.login import login_user, logout_user
 from flask import render_template, request, flash, redirect, url_for
 
 from elemental import app
-from elemental.model import User
 from elemental.model.forms import SignupForm
 from elemental.model.user import UserObj
 
@@ -66,7 +65,7 @@ def signup():
         passwd = request.form.get('passwd')
         passwd_verify = request.form.get('passwd_verify')
         if passwd == passwd_verify:
-            result = User.create(email, passwd)
+            result = UserObj.create(email, passwd)
             app.logger.debug(result)
             if result:
                 flash('User account successfully created.')
